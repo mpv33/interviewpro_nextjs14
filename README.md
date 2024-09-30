@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 14 Learning Repository
 
-## Getting Started
+Welcome to my Next.js 14 learning repository! This project serves as a hands-on guide to mastering Next.js 14, showcasing best practices, key features, and practical examples for building scalable web applications.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Learning Objectives](#learning-objectives)
+- [Key Features](#key-features)
+- [Best Practices](#best-practices)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Resources](#resources)
+- [Contributing](#contributing)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js 14 introduces enhancements like Turbo Mode, an improved routing system, and advanced data fetching methods, making it a powerful framework for modern web development.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Learning Objectives
 
-## Learn More
+- Master core features of Next.js 14, including Turbo Mode and the `use` hook.
+- Implement effective data fetching strategies (SSR, SSG, ISR).
+- Optimize applications for performance and SEO.
+- Enhance accessibility and integrate TypeScript.
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Turbo Mode**: Reduces build times significantly.
+2. **Improved App Router**: Offers flexible routing.
+3. **`use` Hook**: Simplifies data fetching with built-in error handling.
+4. **Edge Middleware**: Executes logic closer to users.
+5. **Enhanced Data Fetching**: Streamlines SSR and SSG APIs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Best Practices
 
-## Deploy on Vercel
+- **Organized Structure**: Maintain clear separation of concerns in your codebase.
+- **Data Fetching**:
+  - Use **SSG** for static content.
+  - Apply **ISR** for frequently updated pages.
+  - Use **SSR** for dynamic content.
+- **Performance Optimization**: Utilize the `<Image />` component and dynamic imports for lazy loading.
+- **Error Handling**: Centralize error management to provide user-friendly messages.
+- **SEO & Accessibility**: Use `<Head />` for SEO and ensure semantic HTML structure.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# interviewpro_nextjs14
+```plaintext
+src
+├── app                   # Application pages
+├── components            # Reusable UI components
+├── hooks                 # Custom hooks
+├── services              # API services
+├── styles                # Global styles
+└── utils                 # Utility functions
